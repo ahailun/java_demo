@@ -1,7 +1,13 @@
+package cn.ly.helloWorld;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 @RestController
-public class DemoController {
-    @GetMapping("/")
-    public String sayHello() {
-        return "Hello GitHub Actions!";
+
+public class HelloController {
+    @RequestMapping("/hello")
+    public String hello(){
+        return "Hello World!";
     }
 }
