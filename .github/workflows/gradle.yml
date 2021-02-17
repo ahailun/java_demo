@@ -34,7 +34,7 @@ jobs:
       run: |
         echo ${{ secrets.REGISTRY_USERNAME }}
         echo ${{ secrets.REGISTRY_PASSWORD }}
-        echo "${{ secrets.REGISTRY_PASSWORD }}" |  docker login --username=${{ secrets.REGISTRY_USERNAME }}  ccr.ccs.tencentyun.com  --password-stdin
+        echo "${{ secrets.REGISTRY_PASSWORD }}" |  docker login --username=${{ secrets.REGISTRY_USERNAME }}  http://ccr.ccs.tencentyun.com  --password-stdin
 
 
            
