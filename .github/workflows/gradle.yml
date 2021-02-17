@@ -31,11 +31,12 @@ jobs:
     - name: Build docker image
       run: docker build . -t javademo:v1
     # 登陆到我的 docker registry
-    - name: Login to tencent docker image registry
+    - name: Login tencent docker image registry
       run: |
         echo ${{ secrets.REGISTRY_USERNAME }}
         echo ${{ secrets.REGISTRY_PASSWORD }}
         echo "${{ secrets.REGISTRY_PASSWORD }}" |  docker login --username=${{ secrets.REGISTRY_USERNAME }}  http://ccr.ccs.tencentyun.com  --password-stdin
+    # 上传docker镜像
+    - name: Push image to my tencent docker image registry
+      run: docker push ccr.ccs.tencentyun.com/javademo_namespace/javademo:v1
 
-
-           
