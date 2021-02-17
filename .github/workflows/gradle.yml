@@ -40,7 +40,7 @@ jobs:
     - name: Push image to my tencent docker image registry
       run: |
         docker image ls 
-        docker tag  javademo ccr.ccs.tencentyun.com/javademo_namespace/javademo:v1
+        docker tag  javademo:v1 ccr.ccs.tencentyun.com/javademo_namespace/javademo:v1
         docker image ls 
         docker push ccr.ccs.tencentyun.com/javademo_namespace/javademo:v1
 
