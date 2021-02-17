@@ -28,4 +28,4 @@ jobs:
        tree
     # 通过 Dockerfile 构建镜像
     - name: Build docker image
-      run: docker build -t javademo:v1
+      run: docker build . -t javademo:v1
