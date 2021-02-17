@@ -26,3 +26,6 @@ jobs:
       run: |
        ./gradlew build
        tree
+    # 通过 Dockerfile 构建镜像
+    - name: Build docker image
+      run: docker build . -t javaDemo:v1
