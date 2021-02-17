@@ -38,5 +38,7 @@ jobs:
         echo "${{ secrets.REGISTRY_PASSWORD }}" |  docker login --username=${{ secrets.REGISTRY_USERNAME }}  http://ccr.ccs.tencentyun.com  --password-stdin
     # 上传docker镜像
     - name: Push image to my tencent docker image registry
-      run: docker push ccr.ccs.tencentyun.com/javademo_namespace/javademo:v1
+      run: |
+        docker image ls 
+        docker push javademo:v1
 
