@@ -4,5 +4,5 @@
 With it, the development team can make their application be available 24/7.Further more, bugs in the codes can be found as fast as we can.
 
 ## overview
->>As the picture says:when the developer pushed his/her code to the git repository,the CI/CD progress will start to verify every step we have put in advance.
->>[solution is here](./res/flow.png)
+>>As the picture says:when the developer pushed his/her code to the git repository,the CI/CD progress will start to verify every step we have put in advance.  
+>>![solution is here](./res/flow.png)
