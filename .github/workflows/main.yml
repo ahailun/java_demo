@@ -44,8 +44,8 @@ jobs:
         docker image ls 
         docker push ccr.ccs.tencentyun.com/javademo_namespace/javademo:v1
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
+  # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
   # This workflow contains a single job called "build"
   pull-docker:
     needs: [build]
